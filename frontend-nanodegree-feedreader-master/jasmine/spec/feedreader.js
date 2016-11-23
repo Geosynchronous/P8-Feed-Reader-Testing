@@ -33,17 +33,17 @@ $(function() {
          * and that the URL is not empty.
          */
 
-         it('has defined URL for each selectable feed category', function() {
+        it('has defined URL for each selectable feed category', function() {
             allFeeds.forEach(function(allFeed, index) {
               expect(allFeed.url).toBeDefined();
             });
-         });
+        });
 
-         it('has at least one RSS feed item URL in each selectable feed category', function() {
+        it('has at least one RSS feed item URL in each selectable feed category', function() {
             allFeeds.forEach(function(allFeed, index) {
               expect(allFeed.url.length).not.toBe(0);
             });
-         });
+        });
 
 
 
@@ -52,11 +52,11 @@ $(function() {
          * and that the name is not empty.
          */
 
-         it('has defined name for each selectable feed category', function() {
+        it('has defined name for each selectable feed category', function() {
             allFeeds.forEach(function(allFeed, index) {
               expect(allFeed.name).toBeDefined();
             });
-         });
+        });
     });
 
 
@@ -69,9 +69,9 @@ $(function() {
          * hiding/showing of the menu element.
          */
 
-         it('is hidden', function() {
+        it('is hidden on default', function() {
             expect($('.menu-hidden')).toBeDefined();
-         });
+        });
 
 
          /* TODO: Write a test that ensures the menu changes
@@ -80,9 +80,15 @@ $(function() {
           * clicked and does it hide when clicked again.
           */
 
-         // it('another specification', function() {
+        it('when hidden, becomes visible when menu-icon is clicked', function() {
+            $('.menu-icon-link').trigger('click');
+            expect($('.menu-hidden').css('transform')).not.toBeDefined();
+        });
 
-         // });
+        it('when visible, becomes hidden when menu-icon is clicked', function() {
+            $('.menu-icon-link').trigger('click');
+            expect($('.menu-hidden').css('transform')).toBeDefined();
+        });
     });
 
 
