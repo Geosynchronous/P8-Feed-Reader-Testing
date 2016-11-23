@@ -1,4 +1,7 @@
 # P8-Feed-Reader-Testing
+by George Fischer
+Udacity FEND Nanodegree Student
+Fall 2016
 
 ### Contents
 - UDACITY FEND Course Project
