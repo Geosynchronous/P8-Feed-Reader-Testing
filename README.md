@@ -17,7 +17,7 @@
 
 - A basic working **FEED READER App** is provided to be tested
 - The only file that I need to modify and embellish is the `feedreader.js file`, which will contain all the Test Spec Suites
-- The `feedreader.js` file is the last line of `<script>` in the index.html file
+- The `feedreader.js` file is the last line of `<script>` in the index.html file, so that the test will be run from with the app code, and it will be the very last thing to run after all the app code has loaded and invoked.
 
 ## Where to find the project files
 - The Udacity FEND Course and project files were downloaded from: https://github.com/udacity/frontend-nanodegree-feedreader
