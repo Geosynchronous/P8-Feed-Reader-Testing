@@ -34,7 +34,7 @@
 ![Feedreader Screenshot](https://github.com/Geosynchronous/P8-Feed-Reader-Testing/blob/master/DocImages/Screen%20Shot%202016-11-23%20at%203.13.03%20PM.png)
 
 - And then at the bottom of the window you will see the visual to the test code messages
-- WHere test **SUITE** and **SPECIFICATION** messages are given
+- Where test **SUITE** and **SPECIFICATION** messages are given
 ![Jasmine Test Suite Screenshot](https://github.com/Geosynchronous/P8-Feed-Reader-Testing/blob/master/DocImages/Screen%20Shot%202016-11-23%20at%203.13.42%20PM.png)
 
 - If everything works, the messages will indicate that in Green and Black text
@@ -45,6 +45,7 @@
 
 ## How to purposely fail a Specification Test
 - By changing parts of code, like the spelling of an object in the `app.js` related to any of the tests in the `feedreader.js` file is one way to do it
+  - for instance you can change the API addresses slightly
 - you can also add or remove the prefix `.not` from the `.toBe()` ot `toBeDefined()` **matchers** in the `feedreader.js` file
 
 ![Screenshot Code Change](https://github.com/Geosynchronous/P8-Feed-Reader-Testing/blob/master/DocImages/Screen%20Shot%202016-11-23%20at%203.50.45%20PM.png)
