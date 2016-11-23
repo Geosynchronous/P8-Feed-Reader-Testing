@@ -1,6 +1,6 @@
 # P8-Feed-Reader-Testing
 ## FEND Course Project
-- The Main intent of this project is to learn how to use the `jasmine.js` library to do TEST DRIVEN CODE DEVELOPMENT
+- The Main intent of this project is to learn how to use the `jasmine.js` library to do TEST DRIVEN CODE DEVELOPMENT ![JasmneLibrary Logo](https://github.com/Geosynchronous/P8-Feed-Reader-Testing/blob/master/DocImages/Screen%20Shot%202016-11-23%20at%203.32.27%20PM.png)
 - A basic working FEED READER App is provided to be tested
 - The only file that I need to modify and embellish is the `feedreader.js file`, which will contain all the Test Spec Suites
 - The `feedreader.js` file is the last line of `<script>` in the index.html file
@@ -23,4 +23,5 @@
 
 ## How to fail a Specification Test
 - By changing parts of, like the spelling of an object in the `app.js` related to any of the tests in the `feedreader.js` file is one way to do it
-
+- you can also add or remove the prefix `.not` from the `.toBe()` ot `toBeDefined()` matchers in the `feedreader.js` file
+- just save your changes and reload the index.html file in your browser to see the results
