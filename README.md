@@ -1,6 +1,7 @@
 # P8-Feed-Reader-Testing
 ## FEND Course Project
 - The Main intent of this project is to learn how to use the `jasmine.js` library to do TEST DRIVEN CODE DEVELOPMENT
+
 ![JasmneLibrary Logo](https://github.com/Geosynchronous/P8-Feed-Reader-Testing/blob/master/DocImages/Screen%20Shot%202016-11-23%20at%203.32.27%20PM.png)
 
 - A basic working FEED READER App is provided to be tested
