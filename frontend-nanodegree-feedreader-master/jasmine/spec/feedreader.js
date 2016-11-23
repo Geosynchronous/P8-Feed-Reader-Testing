@@ -70,8 +70,6 @@ $(function() {
          */
 
          it('is hidden', function() {
-            var slideMenuElement = $('div').find('slide-menu');
-            console.log(slideMenuElement);
             expect($('.menu-hidden')).toBeDefined();
          });
 
