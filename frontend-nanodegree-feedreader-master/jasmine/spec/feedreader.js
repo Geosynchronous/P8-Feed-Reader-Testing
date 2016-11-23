@@ -102,8 +102,19 @@ $(function() {
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
 
-        it('has at least one entry visible', function() {
+        // loadFeed[0] has loaded by default, we will do loadFeed[1] to invoke
+        // a different and fresh set of entry elements to load and wait till
+        // loading is done to perform the spec test
 
+        beforeEach(function(done){
+            loadFeed(1, function(){
+                done();
+            });
+        });
+
+        it('has at least one entry visible', function(done) {
+            expect($('.entry-link')).toBeDefined();
+            done();
          });
 
     });
