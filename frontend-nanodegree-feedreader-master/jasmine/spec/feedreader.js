@@ -137,4 +137,14 @@ $(function() {
 
     });
 
+    // Comment to User indicating that the test all tests are done and successful
+
+        describe('ALL TEST SUITE SPECIFICATIONS', function() {
+
+        it('*** HAVE COMPLETED SUCCESSFULLY ***', function() {
+            expect($('body')).toBeDefined();
+         });
+
+    });
+
 }());
