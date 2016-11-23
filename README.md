@@ -7,12 +7,12 @@
 
 ## Where to find the project files
 - The Udacity FEND Course and project files were downloaded from: https://github.com/udacity/frontend-nanodegree-feedreader
-- My edited versions showing my work, reside in this repository in this folder: ..//frontend-nanodegree-feedreader-master
+- My edited versions showing my work, reside in this repository in this folder: `frontend-nanodegree-feedreader-master`
 - The README.md in the above folder basically details how this project is to be completed
 
 ## How to Run the Completed Project
 - Download or clone https://github.com/Geosynchronous/P8-Feed-Reader-Testing.git to your local disk
-- Then Navigate to this folder ../frontend-nanodegree-feedreader-master
+- Then Navigate to this folder `frontend-nanodegree-feedreader-master`
 - Then in the open folder click on index.html to invoke the code in your browser
 
 ## What you will see
@@ -21,6 +21,6 @@
 - If everything works, the messages will indicate that in Green and Black text
 - If one of the test specifications is not met, you will see some Red message text, and details about the error
 
-## How to break the test
--
+## How to fail a Specification Test
+- By changing parts of, like the spelling of an object in the `app.js` related to any of the tests in the `feedreader.js` file is one way to do it
 
