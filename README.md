@@ -16,8 +16,8 @@
 - Then in the open folder click on index.html to invoke the code in your browser
 
 ## What you will see
-- You will see the Feed Reader Code first load into the browser, window
-- And then at the bottom of the window you will see the visual to the test code messages
+- You will see the Feed Reader Code first load into the browser, window ![Feedreader Screenshot](https://github.com/Geosynchronous/P8-Feed-Reader-Testing/blob/master/DocImages/Screen%20Shot%202016-11-23%20at%203.13.03%20PM.png)
+- And then at the bottom of the window you will see the visual to the test code messages ![Jasmine Test Suite Screenshot](https://github.com/Geosynchronous/P8-Feed-Reader-Testing/blob/master/DocImages/Screen%20Shot%202016-11-23%20at%203.13.42%20PM.png)
 - If everything works, the messages will indicate that in Green and Black text
 - If one of the test specifications is not met, you will see some Red message text, and details about the error
 
