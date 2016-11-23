@@ -1,4 +1,11 @@
 # P8-Feed-Reader-Testing
+### Contents
+- UDACITY FEND Course Project
+- Where to find the project files
+- How to Run the Completed Project
+- What you will see
+- How to fail a Specification Test
+
 ## UDACITY FEND Course Project
 
 ![Udacity Logo](https://github.com/Geosynchronous/P8-Feed-Reader-Testing/blob/master/DocImages/udacity_share-46db4b8faf075a5af5a1070a7fa0ad3639783609ff45f447e4ea467fe3aa9d32.png)
@@ -31,7 +38,13 @@
 - If everything works, the messages will indicate that in Green and Black text
 - If one of the test specifications is not met, you will see some Red message text, and details about the error
 
+![Screenshjot Test Failure](https://github.com/Geosynchronous/P8-Feed-Reader-Testing/blob/master/DocImages/Screen%20Shot%202016-11-23%20at%203.51.12%20PM.png)
+
+
 ## How to fail a Specification Test
 - By changing parts of, like the spelling of an object in the `app.js` related to any of the tests in the `feedreader.js` file is one way to do it
 - you can also add or remove the prefix `.not` from the `.toBe()` ot `toBeDefined()` matchers in the `feedreader.js` file
+
+![Screenshot Code Change](https://github.com/Geosynchronous/P8-Feed-Reader-Testing/blob/master/DocImages/Screen%20Shot%202016-11-23%20at%203.50.45%20PM.png)
+
 - just save your changes and reload the index.html file in your browser to see the results
