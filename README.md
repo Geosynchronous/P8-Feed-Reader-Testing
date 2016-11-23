@@ -21,7 +21,7 @@
 
 ## Where to find the project files
 - The Udacity FEND Course and project files were downloaded from: https://github.com/udacity/frontend-nanodegree-feedreader
-- My edited versions showing my work, reside in this repository in this folder: `frontend-nanodegree-feedreaderr`
+- My edited versions showing my work, reside in this repository in this folder: `frontend-nanodegree-feedreader`
 - The `README.md` in the above folder basically details how this project is to be completed
 
 ## How to Run the Completed Project
