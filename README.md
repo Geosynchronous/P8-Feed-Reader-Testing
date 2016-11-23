@@ -1,4 +1,5 @@
 # P8-Feed-Reader-Testing
+
 ### Contents
 - UDACITY FEND Course Project
 - Where to find the project files
@@ -6,7 +7,7 @@
 - What you will see
 - How to purposely fail a Specification Test
 
-## UDACITY FEND Course Project
+## A UDACITY FEND Course Project
 
 ![Udacity Logo](https://github.com/Geosynchronous/P8-Feed-Reader-Testing/blob/master/DocImages/udacity_share-46db4b8faf075a5af5a1070a7fa0ad3639783609ff45f447e4ea467fe3aa9d32.png)
 
@@ -14,14 +15,14 @@
 
 ![JasmneLibrary Logo](https://github.com/Geosynchronous/P8-Feed-Reader-Testing/blob/master/DocImages/Screen%20Shot%202016-11-23%20at%203.32.27%20PM.png)
 
-- A basic working FEED READER App is provided to be tested
+- A basic working **FEED READER App** is provided to be tested
 - The only file that I need to modify and embellish is the `feedreader.js file`, which will contain all the Test Spec Suites
 - The `feedreader.js` file is the last line of `<script>` in the index.html file
 
 ## Where to find the project files
 - The Udacity FEND Course and project files were downloaded from: https://github.com/udacity/frontend-nanodegree-feedreader
 - My edited versions showing my work, reside in this repository in this folder: `frontend-nanodegree-feedreader-master`
-- The README.md in the above folder basically details how this project is to be completed
+- The `README.md` in the above folder basically details how this project is to be completed
 
 ## How to Run the Completed Project
 - Download or clone https://github.com/Geosynchronous/P8-Feed-Reader-Testing.git to your local disk
@@ -43,9 +44,9 @@
 
 
 ## How to purposely fail a Specification Test
-- By changing parts of, like the spelling of an object in the `app.js` related to any of the tests in the `feedreader.js` file is one way to do it
+- By changing parts of code, like the spelling of an object in the `app.js` related to any of the tests in the `feedreader.js` file is one way to do it
 - you can also add or remove the prefix `.not` from the `.toBe()` ot `toBeDefined()` **matchers** in the `feedreader.js` file
 
 ![Screenshot Code Change](https://github.com/Geosynchronous/P8-Feed-Reader-Testing/blob/master/DocImages/Screen%20Shot%202016-11-23%20at%203.50.45%20PM.png)
 
-- just save your changes and reload the index.html file in your browser to see the results
+- just save your changes and reload the `index.html` file in your browser to see the results
