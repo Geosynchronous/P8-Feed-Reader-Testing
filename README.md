@@ -1,5 +1,8 @@
 # P8-Feed-Reader-Testing
-## FEND Course Project
+## UDACITY FEND Course Project
+
+![Udacity Logo](https://github.com/Geosynchronous/P8-Feed-Reader-Testing/blob/master/DocImages/udacity_share-46db4b8faf075a5af5a1070a7fa0ad3639783609ff45f447e4ea467fe3aa9d32.png)
+
 - The Main intent of this project is to learn how to use the `jasmine.js` library to do TEST DRIVEN CODE DEVELOPMENT
 
 ![JasmneLibrary Logo](https://github.com/Geosynchronous/P8-Feed-Reader-Testing/blob/master/DocImages/Screen%20Shot%202016-11-23%20at%203.32.27%20PM.png)
@@ -10,9 +13,6 @@
 
 ## Where to find the project files
 - The Udacity FEND Course and project files were downloaded from: https://github.com/udacity/frontend-nanodegree-feedreader
-
-![Udacity Logo](https://github.com/Geosynchronous/P8-Feed-Reader-Testing/blob/master/DocImages/udacity_share-46db4b8faf075a5af5a1070a7fa0ad3639783609ff45f447e4ea467fe3aa9d32.png)
-
 - My edited versions showing my work, reside in this repository in this folder: `frontend-nanodegree-feedreader-master`
 - The README.md in the above folder basically details how this project is to be completed
 
