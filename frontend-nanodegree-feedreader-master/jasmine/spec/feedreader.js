@@ -102,9 +102,27 @@ $(function() {
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
 
-        // loadFeed[0] has loaded by default, we will do loadFeed[1] to invoke
-        // a different and fresh set of entry elements to load and wait till
-        // loading is done to perform the spec test
+        beforeEach(function(done){
+            loadFeed(0, function(){
+                done();
+            });
+        });
+
+        it('has at least one entry visible', function(done) {
+            expect($('.entry-link')).toBeDefined();
+            done();
+         });
+
+    });
+
+    /* TODO: Write a new test suite named "New Feed Selection" */
+
+    describe('New Feed Selection', function() {
+
+        /* TODO: Write a test that ensures when a new feed is loaded
+         * by the loadFeed function that the content actually changes.
+         * Remember, loadFeed() is asynchronous.
+         */
 
         beforeEach(function(done){
             loadFeed(1, function(){
@@ -118,20 +136,5 @@ $(function() {
          });
 
     });
-
-    // /* TODO: Write a new test suite named "New Feed Selection" */
-
-    //     describe('New Feed Selection', function() {
-
-    //     /* TODO: Write a test that ensures when a new feed is loaded
-    //      * by the loadFeed function that the content actually changes.
-    //      * Remember, loadFeed() is asynchronous.
-    //      */
-
-    //      it('another specification', function() {
-
-    //      });
-
-    // });
 
 }());
