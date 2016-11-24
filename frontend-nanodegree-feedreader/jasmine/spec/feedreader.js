@@ -31,12 +31,10 @@ $(function() {
             expect(allFeeds.length).not.toBe(0);
         });
 
-
         /* A test that loops through each feed
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
-
         it('has defined URL for each selectable feed category', function() {
             allFeeds.forEach(function(allFeed, index) {
               expect(allFeed.url).toBeDefined();
@@ -48,8 +46,6 @@ $(function() {
               expect(allFeed.url.length).not.toBe(0);
             });
         });
-
-
 
         /* A test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
@@ -63,7 +59,6 @@ $(function() {
         });
     });
 
-
     /* A new test suite named "The menu" */
     describe('The Menu', function() {
 
@@ -76,7 +71,6 @@ $(function() {
         it('is hidden on default', function() {
             expect($('.menu-hidden')).toBeDefined();
         });
-
 
          /* A test that ensures the menu changes
           * visibility when the menu icon is clicked. This test
@@ -124,7 +118,6 @@ $(function() {
             expect($('.entry-link')).toBeDefined();
             done();
          });
-
     });
 
     /* A new test suite named "New Feed Selection" */
