@@ -94,7 +94,7 @@ $(function() {
     /* A new test suite named "Initial Entries" */
     describe('Async Initial Entries', function() {
 
-        /* TODO: Write a test that ensures when the loadFeed
+        /* A test that ensures when the loadFeed
          * function is called and completes its work, there is at least
          * a single .entry element within the .feed container.
          * Remember, loadFeed() is asynchronous so this test will require
