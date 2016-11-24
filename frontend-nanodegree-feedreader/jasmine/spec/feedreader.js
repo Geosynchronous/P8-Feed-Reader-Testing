@@ -102,9 +102,7 @@ $(function() {
          */
 
         beforeEach(function(done){
-            loadFeed(0, function(){
-                done();
-            });
+            loadFeed(0, done);
         });
 
         // Test for Array
