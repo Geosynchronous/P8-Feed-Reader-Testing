@@ -70,7 +70,7 @@ $(function() {
          */
 
         it('is hidden on default', function() {
-            expect($('.menu-hidden')).toBeDefined();
+            expect($('body').hasClass('menu-hidden')).toBe(true);
         });
 
          /* A test that ensures the menu changes
