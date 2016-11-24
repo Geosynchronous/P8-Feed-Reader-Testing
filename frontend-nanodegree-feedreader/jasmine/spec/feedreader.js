@@ -105,11 +105,6 @@ $(function() {
             loadFeed(0, done);
         });
 
-        // Test for Array
-        it('has initial Load Feed Array', function(done) {
-            expect(loadFeed).toBeDefined();
-            done();
-         });
 
         // Test for Entry
         it('has at least one entry visible', function(done) {
