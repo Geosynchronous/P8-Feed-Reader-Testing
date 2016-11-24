@@ -55,6 +55,7 @@ $(function() {
         it('has defined name for each selectable feed category', function() {
             allFeeds.forEach(function(allFeed, index) {
               expect(allFeed.name).toBeDefined();
+              expect(allFeed.name.length).not.toBe(0);
             });
         });
     });
