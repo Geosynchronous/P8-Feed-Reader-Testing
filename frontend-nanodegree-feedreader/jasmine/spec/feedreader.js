@@ -105,9 +105,8 @@ $(function() {
             loadFeed(0, done);
         });
 
-
-        // Test for Entry
         it('has at least one entry visible', function(done) {
+            expect($('.feed .entry').length).toBeGreaterThan(0);
             done();
          });
     });
