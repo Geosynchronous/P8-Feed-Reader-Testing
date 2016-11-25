@@ -12,7 +12,7 @@ by George Fischer, a Udacity FEND Nanodegree Student, Fall 2016
 
 ![Udacity Logo](https://github.com/Geosynchronous/P8-Feed-Reader-Testing/blob/master/DocImages/udacity_share-46db4b8faf075a5af5a1070a7fa0ad3639783609ff45f447e4ea467fe3aa9d32.png)
 
-- The Main intent of this project is to learn how to use the `jasmine.js` library to do **TEST DRIVEN CODE DEVELOPMENT** and more specifically in this example [Behavioour Driven Development (BDD)](https://en.wikipedia.org/wiki/Behavior-driven_development)
+- The Main intent of this project is to learn how to use the `jasmine.js` library to do **TEST DRIVEN CODE DEVELOPMENT** and more specifically in this project [Behavioour Driven Development (BDD)](https://en.wikipedia.org/wiki/Behavior-driven_development)
 
 ![JasmneLibrary Logo](https://github.com/Geosynchronous/P8-Feed-Reader-Testing/blob/master/DocImages/Screen%20Shot%202016-11-23%20at%203.32.27%20PM.png)
 
