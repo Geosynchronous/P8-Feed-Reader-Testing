@@ -19,7 +19,7 @@ by George Fischer, a Udacity FEND Nanodegree Student, Fall 2016
 - A basic working **FEED READER App** is provided to be tested
 - The only file that I need to modify and embellish is the `feedreader.js file`, which will contain all the Test Spec Suites
 - The `feedreader.js` file is the last line of `<script>` in the index.html file, so that the test will be run from with the app code, and it will be the very last thing to run after all the app code has loaded and invoked.
-- The asynchronous app functions will employ the ("cb/done" methodology)[http://stackoverflow.com/questions/4700424/javascript-callback-after-calling-function] in vanilla JS and [done() methodology in Jassmine](https://jasmine.github.io/2.4/introduction.html#section-Asynchronous_Support).  Adopting the new more robust [Promise](https://developers.google.com/web/fundamentals/getting-started/primers/promises#toc-parallelism-sequencing) standard in JS could be a future enhancement.
+- NOTE: The asynchronous app functions will employ the ["cb/done" methodology](http://stackoverflow.com/questions/4700424/javascript-callback-after-calling-function} in vanilla JS and [done() methodology in Jassmine](https://jasmine.github.io/2.4/introduction.html#section-Asynchronous_Support).  Adopting the new more robust [Promise](https://developers.google.com/web/fundamentals/getting-started/primers/promises#toc-parallelism-sequencing) standard in JS could be a future enhancement.
 
 ## Where to find the project files
 - The Udacity FEND Course and project files were downloaded from: https://github.com/udacity/frontend-nanodegree-feedreader
