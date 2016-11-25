@@ -12,11 +12,12 @@
  * since some of these tests may require DOM elements. We want
  * to ensure they don't run until the DOM is ready.
  */
+
 $(function() {
     /* This is our first test suite - a test suite just contains
-    * a related set of tests. This suite is all about the RSS
-    * feeds definitions, the allFeeds variable in our application.
-    */
+     * a related set of tests. This suite is all about the RSS
+     * feeds definitions, the allFeeds variable in our application.
+     */
     describe('RSS Feeds', function() {
 
         /* This is our first test - it tests to make sure that the
@@ -37,13 +38,13 @@ $(function() {
          */
         it('has defined URL for each selectable feed category', function() {
             allFeeds.forEach(function(allFeed, index) {
-              expect(allFeed.url).toBeDefined();
+                expect(allFeed.url).toBeDefined();
             });
         });
 
         it('has at least one RSS feed item URL in each selectable feed category', function() {
             allFeeds.forEach(function(allFeed, index) {
-              expect(allFeed.url.length).not.toBe(0);
+                expect(allFeed.url.length).not.toBe(0);
             });
         });
 
@@ -54,8 +55,8 @@ $(function() {
 
         it('has defined name for each selectable feed category', function() {
             allFeeds.forEach(function(allFeed, index) {
-              expect(allFeed.name).toBeDefined();
-              expect(allFeed.name.length).not.toBe(0);
+                expect(allFeed.name).toBeDefined();
+                expect(allFeed.name.length).not.toBe(0);
             });
         });
     });
@@ -73,11 +74,11 @@ $(function() {
             expect($('body').hasClass('menu-hidden')).toBe(true);
         });
 
-         /* A test that ensures the menu changes
-          * visibility when the menu icon is clicked. This test
-          * should have two expectations: does the menu display when
-          * clicked and does it hide when clicked again.
-          */
+        /* A test that ensures the menu changes
+         * visibility when the menu icon is clicked. This test
+         * should have two expectations: does the menu display when
+         * clicked and does it hide when clicked again.
+         */
 
         it('when hidden, becomes visible when menu-icon is clicked', function() {
             $('.menu-icon-link').trigger('click');
@@ -101,14 +102,14 @@ $(function() {
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
 
-        beforeEach(function(done){
+        beforeEach(function(done) {
             loadFeed(0, done);
         });
 
         it('has at least one entry visible', function(done) {
             expect($('.feed .entry').length).toBeGreaterThan(0);
             done();
-         });
+        });
     });
 
     /* A new test suite named "New Feed Selection" */
@@ -120,15 +121,34 @@ $(function() {
          * Remember, loadFeed() is asynchronous.
          */
 
-        beforeEach(function(done){
-            loadFeed(1, function(){
+        var initialEntry,
+            updatedEntry;
+
+        // Loads an Initial Feed and saves Entry to var
+        // The Asynchronous loadFeed Function needs to be done
+        // before the next block of code can be invoked
+        beforeEach(function(done) {
+            loadFeed(0, function() {
+                initialEntry = $('.feed .entry').html();
                 done();
             });
         });
 
-        it('has at least one entry visible', function(done) {
-            expect($('.entry-link')).toBeDefined();
+        // Loads a new Next Feed and saves that Entry to var
+        // The Asynchronous loadFeed Function is invoked after the above block is done
+        // And then needs to be done itself before the next block of code can execute
+        beforeEach(function(done) {
+            loadFeed(1, function() {
+                nextEntry = $('.feed .entry').html();
+                done();
+            });
+        });
+
+        // Makes sure Initial & Next Entries are different
+        // Waits for the above block of code to be done before invoking
+        it('should have new changed entry', function(done) {
+            expect(nextEntry).not.toEqual(initialEntry);
             done();
-         });
+        });
     });
 }());
