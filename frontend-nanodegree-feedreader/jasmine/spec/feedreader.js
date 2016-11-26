@@ -106,9 +106,8 @@ $(function() {
             loadFeed(0, done);
         });
 
-        it('has at least one entry visible', function(done) {
+        it('has at least one entry visible', function() {
             expect($('.feed .entry').length).toBeGreaterThan(0);
-            done();
         });
     });
 
@@ -146,9 +145,8 @@ $(function() {
 
         // Makes sure Initial & Next Entries are different
         // Waits for the above block of code to be done before invoking
-        it('should have new changed entry', function(done) {
+        it('should have new changed entry', function() {
             expect(nextEntry).not.toEqual(initialEntry);
-            done();
         });
     });
 }());
